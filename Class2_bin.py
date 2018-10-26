@@ -86,7 +86,7 @@ y_test = test.as_matrix(cls).ravel()
 '''
 
 # Use train_test_split to split the data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y)
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size = 0.7)
 
 
 # Rescale the data to values between 1 and 0 (this gives each attribute equal weight)

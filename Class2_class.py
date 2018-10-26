@@ -26,7 +26,7 @@ print(cancer)
 '''
 
 # Read the Police Binned dataset into a Pandas data frame
-cover = pd.read_csv('W:/Documents/SCHOOL/Towson/2018-2022 -- DSc - Computer Security/6_Fall 2018/COSC 757 - Data Mining/Assignments/Classification Competition - 11-1/train_data.csv')
+cover = pd.read_csv('C:/Users/whatch2/Desktop/ClassificationCompetition/train_data.csv')
 # Use the hold out method to create training data (70% random sample) and testing data (30% random sample)
 train=cover.sample(frac=0.7,random_state=1234)
 test=cover.drop(train.index)
@@ -41,17 +41,17 @@ obs_bin = ['ID',
 'Hillshade_9am','Hillshade_noon',
 'Hillshade_3pm',
 'Horizontal_Distance_To_Fire_Points',
-#'Wilderness_Area_1',
-#'Wilderness_Area_2',
-#'Wilderness_Area_3',
-#'Wilderness_Area_4',
-#'2702','2703','2704','2705','2706','2717',
-#'3501','3502','4201','4703','4704','4744',
-#'4758','5101','5151','6101','6102','6731',
-#'7101','7102','7103','7201','7202','7700',
-#'7701','7702','7709','7710','7745','7746',
-#'7755','7756','7757','7790','8703','8707',
-#'8708','8771','8772','8776'
+'Wilderness_Area_1',
+'Wilderness_Area_2',
+'Wilderness_Area_3',
+'Wilderness_Area_4',
+'2702','2703','2704','2705','2706','2717',
+'3501','3502','4201','4703','4704','4744',
+'4758','5101','5151','6101','6102','6731',
+'7101','7102','7103','7201','7202','7700',
+'7701','7702','7709','7710','7745','7746',
+'7755','7756','7757','7790','8703','8707',
+'8708','8771','8772','8776'
 #,'Cover_Type'
 ]
 
