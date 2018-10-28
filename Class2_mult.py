@@ -92,14 +92,14 @@ y_test = test.as_matrix(cls).ravel()
 # Use train_test_split to split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, train_size = 0.7)
 
-
+'''
 # Rescale the data to values between 1 and 0 (this gives each attribute equal weight)
 scaler = StandardScaler()
 # Fit only to the training data
 scaler.fit(X_train)
 X_train = scaler.transform(X_train)
 X_test = scaler.transform(X_test)
-
+'''
 
 # ---- Logistic Regression
 print("---- Logistic Regression ----")
@@ -211,7 +211,7 @@ print(metrics.classification_report(y_test, boost_pred))
 scores = cross_val_score(boosting, X, y)
 print(scores.mean())
 
-
+'''
 # ---- Cross Validation Sampling
 print("---- Cross Validation ----")
 
@@ -225,4 +225,4 @@ for train_index, test_index in kf.split(X):
     svm_clf.fit(X_train,y_train)
     svm_pred = svm_clf.predict(X_test)
     print((sum(y_test==svm_pred))/len(svm_pred))
-
+'''
