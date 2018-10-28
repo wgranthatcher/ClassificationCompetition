@@ -1,9 +1,17 @@
+from __future__ import division
+from sklearn.model_selection import train_test_split
+from sklearn import linear_model
+from sklearn import metrics
+from sklearn.model_selection import cross_val_score, KFold
+from sklearn.preprocessing import StandardScaler
+
 import numpy as np
 import timeit
 import pandas as pd
 import datetime
 import argparse
 import sys
+import keras.utils
 
 from functools import partial
 from nltk.tokenize.regexp import regexp_tokenize
@@ -18,6 +26,8 @@ from keras.models import Model
 from keras.models import Sequential
 from keras.constraints import maxnorm
 from keras.optimizers import Nadam
+
+
 
 def main():
 
@@ -42,7 +52,7 @@ def final_test(args):
     train=cover.sample(frac=0.7,random_state=1234)
     test=cover.drop(train.index)
     
-    obs_bin = [#'ID',
+    obs_bin = [ #'ID',
     'Elevation',
     'Aspect',
     'Slope',
@@ -77,6 +87,21 @@ def final_test(args):
     
     X = cover.as_matrix(obs_bin)
     y = cover.as_matrix(cls).ravel()
+    #y = cover.as_matrix(cls)
+
+    print("y:")
+    print(y)
+
+    '''
+    for i in y:
+        if i==7:
+            i==0
+
+    print(y)
+    '''
+    y = y-1
+
+    y = keras.utils.to_categorical(y,num_classes = 7)
     
     '''
     X_train = train.as_matrix(obs_bin)
@@ -96,10 +121,10 @@ def final_test(args):
     X_train = scaler.transform(X_train)
     X_test = scaler.transform(X_test)
     '''
-	
-	labels = y
-	feat_inputs = X
-	feat_width = int(len(X[0]))
+
+    labels = y
+    feat_inputs = X
+    feat_width = int(len(X[0]))
 
     print 'feat width: ' + str(feat_width)
 
@@ -110,20 +135,25 @@ def final_test(args):
     #'oneLayer_feat':oneLayer_feat, 'dual_simple':dual_simple, 'dual_large':dual_large}
     #models = ('oneLayer_comb', 'oneLayer_feat', 'oneLayer_perm', 'dual_simple', 'dual_large')
 
-	m = "create_thousand_layer"
+    m = "create_thousand_layer"
 	
     data = []
     for r in args["train_ratio"]:
         percent=float(r)/100
         #stratified shuffle split used for cross validation
         sss = StratifiedShuffleSplit(n_splits=5, random_state=0, test_size=1-percent)
-        cm = np.zeros([2,2], dtype=np.int64)
+        cm = np.zeros([len(labs),len(labs)], dtype=np.int64)
         train_time = 0.0
         test_time = 0.0
         ir = 0
         for train_index, test_index in sss.split(feat_inputs, labels):
             feat_train, feat_test = feat_inputs[train_index], feat_inputs[test_index]
             labels_train, labels_test = labels[train_index], labels[test_index]
+
+        scaler = StandardScaler()
+        scaler.fit(feat_train)
+        feat_train = scaler.transform(feat_train)
+        feat_test = scaler.transform(feat_test)
 
         model = create_thousand_layer(optimizer='nadam', data_width=feat_width, neurons=32)
         batch = 16
@@ -206,19 +236,19 @@ def create_thousand_layer(data_width, neurons=25, optimizer='adam', dropout_rate
     model = Sequential()
     #The first param in Dense is the number of neurons in the first hidden layer
     #model.add(Dense(neurons, input_dim=22300, kernel_initializer='normal', activation='relu',kernel_constraint=maxnorm(weight_constraint) ))
-    model.add(Dense(1000, input_dim=data_width, kernel_initializer='normal', activation='relu'))
-    model.add(Dropout(dropout_rate))
-    model.add(Dense(500, input_dim=data_width, kernel_initializer='normal', activation='relu'))
-    model.add(Dropout(dropout_rate))
+    #model.add(Dense(1000, input_dim=data_width, kernel_initializer='normal', activation='relu'))
+    #model.add(Dropout(dropout_rate))
+    #model.add(Dense(500, input_dim=data_width, kernel_initializer='normal', activation='relu'))
+    #model.add(Dropout(dropout_rate))
     model.add(Dense(250, input_dim=data_width, kernel_initializer='normal', activation='relu'))
     model.add(Dropout(dropout_rate))
-    model.add(Dense(100, input_dim=data_width, kernel_initializer='normal', activation='relu'))
+    model.add(Dense(100, kernel_initializer='normal', activation='relu'))
     model.add(Dropout(dropout_rate))
-    model.add(Dense(10, input_dim=data_width, kernel_initializer='normal', activation='relu'))
+    model.add(Dense(10, kernel_initializer='normal', activation='relu'))
     model.add(Dropout(dropout_rate))
-    model.add(Dense(1, kernel_initializer='normal', activation='sigmoid'))
+    model.add(Dense(7, kernel_initializer='normal', activation='softmax'))
     # Compile model
-    model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
+    model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics=['accuracy'])
     return model
 
 
