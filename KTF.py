@@ -81,8 +81,6 @@ def final_test(args):
     labs = list(set(labs))
     print("labs:")
     print(labs)
-    #labs = labs-1
-    print(labs)
 
     #obs_all = ['ID','Elevation','Aspect','Slope','Horizontal_Distance_To_Hydrology','Vertical_Distance_To_Hydrology','Horizontal_Distance_To_Roadways','Hillshade_9am','Hillshade_noon','Hillshade_3pm','Horizontal_Distance_To_Fire_Points','Wilderness_Area_1','Wilderness_Area_2','Wilderness_Area_3','Wilderness_Area_4','2702','2703','2704','2705','2706','2717','3501','3502','4201','4703','4704','4744','4758','5101','5151','6101','6102','6731','7101','7102','7103','7201','7202','7700','7701','7702','7709','7710','7745','7746','7755','7756','7757','7790','8703','8707','8708','8771','8772','8776','Cover_Type']
     
@@ -147,9 +145,11 @@ def final_test(args):
         print 'feat_test: ' + str(feat_test.shape)
 
         model = create_thousand_layer(optimizer='nadam', data_width=feat_width, neurons=32)
-        batch = 16
-        epoch = 32
-        time0 = timeit.default_timer()
+        #batch = 16
+		batch = args["batch_size"]
+        #epoch = 32
+        epoch = args["epochs"]
+		time0 = timeit.default_timer()
         model.fit(feat_train, labels_train, epochs=epoch, batch_size=batch)
         time1 = timeit.default_timer()
         labels_pred = model.predict(feat_test, batch_size = batch)
@@ -169,15 +169,6 @@ def final_test(args):
     #avg_train_time = train_time/5
     #avg_test_time = test_time/5
 
-    # Calculate the accuracy of the classifier.
-    print("Accuracy:")
-    print((sum(labels_test==labels_pred))/len(labels_pred))
-    # Create a confusion matrix using Scikit-Learn confusion_matrix
-    rf_tab = confusion_matrix(labels_test, labels_pred, labels=labs)
-    print(rf_tab)
-    # Create a classification report for the result including precision, recall, and f measure.
-    print(metrics.classification_report(labels_test, labels_pred))
-
     '''
     data.append(dict(zip(["model_name", "neurons", "train_ratio", "input_ratio", \
     "epochs", "batch_size", "accuracy", "precision", "recall", "f1_score", \
@@ -196,6 +187,19 @@ def save_results(data, modelName, model, save):
     hour = str('%02d' % d.hour)
     year = str('%02d' % d.year)
     min = str('%02d' % d.minute)
+
+    # Calculate the accuracy of the classifier.
+    print("Accuracy:")
+    print((sum(labels_test==labels_pred))/len(labels_pred))
+    # Create a confusion matrix using Scikit-Learn confusion_matrix
+    rf_tab = confusion_matrix(labels_test, labels_pred, labels=labs)
+    print(rf_tab)
+    # Create a classification report for the result including precision, recall, and f measure.
+    print(metrics.classification_report(labels_test, labels_pred))
+
+    text_file = open('/home/grant309/ClassificationCompetition/Results' + modelName + month + day + year + '-' + hour + min + '.txt', "w")
+    text_file.write(metrics.classification_report(labels_test, labels_pred))
+    text_file.close()
 
     '''
     df = pd.DataFrame(data)
