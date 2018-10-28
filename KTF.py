@@ -92,12 +92,6 @@ def final_test(args):
     print("y:")
     print(y)
 
-    '''
-    for i in y:
-        if i==7:
-            i==0
-    '''
-
     y = y-1
     print(y)
 
@@ -112,15 +106,6 @@ def final_test(args):
 
     # Use train_test_split to split the data into training and testing sets
     X_train, X_test, y_train, y_test = train_test_split(X, y, train_size = 0.7)
-
-    '''
-    # Rescale the data to values between 1 and 0 (this gives each attribute equal weight)
-    scaler = StandardScaler()
-    # Fit only to the training data
-    scaler.fit(X_train)
-    X_train = scaler.transform(X_train)
-    X_test = scaler.transform(X_test)
-    '''
 
     labels = y
     feat_inputs = X
@@ -173,19 +158,29 @@ def final_test(args):
         test_time += time2-time1
         labels_pred = (labels_pred > 0.5)
     
-	cm = cm + confusion_matrix(labels_test, labels_pred)
-    acc = calc_accuracy(cm)
-    prec = calc_precision(cm)
-    rec = calc_recall(cm)
-    f1 = calc_f1(prec, rec)
-    avg_train_time = train_time/5
-    avg_test_time = test_time/5
+	#cm = cm + confusion_matrix(labels_test, labels_pred)
+    #acc = calc_accuracy(cm)
+    #prec = calc_precision(cm)
+    #rec = calc_recall(cm)
+    #f1 = calc_f1(prec, rec)
+    #avg_train_time = train_time/5
+    #avg_test_time = test_time/5
 
+    # Calculate the accuracy of the classifier.
+    print("Accuracy:")
+    print((sum(labels_test==labels_pred))/len(labels_pred))
+    # Create a confusion matrix using Scikit-Learn confusion_matrix
+    rf_tab = confusion_matrix(labels_test, labels_pred, labels=labs-1)
+    print(rf_tab)
+    # Create a classification report for the result including precision, recall, and f measure.
+    print(metrics.classification_report(labels_test, labels_pred))
+
+    '''
     data.append(dict(zip(["model_name", "neurons", "train_ratio", "input_ratio", \
     "epochs", "batch_size", "accuracy", "precision", "recall", "f1_score", \
     "avg_train_time", "avg_test_time"], \
     [m, size, r, ir, epoch, batch, acc, prec, rec, f1, avg_train_time, avg_test_time])))
-
+    '''
 
     print 'saving results for model: ' + str(m)
     save_results(data, m, model, args["save"])
@@ -199,6 +194,7 @@ def save_results(data, modelName, model, save):
     year = str('%02d' % d.year)
     min = str('%02d' % d.minute)
 
+    '''
     df = pd.DataFrame(data)
     try:
         path1 = '/home/grant309/ClassificationCompetition/Results' + modelName + month + day + year + '-' + hour + min + '.csv'
@@ -208,6 +204,7 @@ def save_results(data, modelName, model, save):
         file1 = open(path1, "w+")
     df.to_csv(file1, index=False)
     file1.close()
+    '''
 
     if save==True:
         model.save('/home/grant309/ClassificationCompetition/Models/'+ modelName + month + day + year + '-' + hour + min + '.h5')
