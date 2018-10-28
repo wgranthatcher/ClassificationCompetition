@@ -31,7 +31,7 @@ cover = pd.read_csv('W:/Documents/SCHOOL/Towson/2018-2022 -- DSc - Computer Secu
 train=cover.sample(frac=0.7,random_state=1234)
 test=cover.drop(train.index)
 
-obs_bin = ['ID',
+obs_bin = [#'ID',
 'Elevation',
 'Aspect',
 'Slope',
@@ -84,6 +84,10 @@ y_train = train.as_matrix(cls).ravel()
 X_test = test.as_matrix(obs_bin)
 y_test = test.as_matrix(cls).ravel()
 '''
+
+#From Keras Work
+#print("X Length:")
+#print(int(len(X[0])))
 
 # Use train_test_split to split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, train_size = 0.7)

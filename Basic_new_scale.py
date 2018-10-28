@@ -16,7 +16,8 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler
 #Import Pandas, Numpy, and Matplotlib Python Libraries
 
 # Read the Police Binned dataset into a Pandas data frame
-cover = pd.read_csv('C:/Users/whatch2/Desktop/ClassificationCompetition/train_data.csv')
+#cover = pd.read_csv('C:/Users/whatch2/Desktop/ClassificationCompetition/train_data.csv')
+cover = pd.read_csv('W:/Documents/SCHOOL/Towson/2018-2022 -- DSc - Computer Security/6_Fall 2018/COSC 757 - Data Mining/Assignments/Classification Competition - 11-1/train_data.csv')
 
 
 # View the structure of the Iris data frame
@@ -36,7 +37,7 @@ test=cover.drop(train.index)
 #First attempt - Class Variable to train for is Signs_Of_Mental_Illness
 #obs_orig = ['date','manner_of_death','armed','age','gender','race','city','state','threat_level','flee','body_camera']
 
-obs_bin = ['ID',
+obs_bin = [#'ID',
 'Elevation',
 'Aspect',
 'Slope',
@@ -157,12 +158,13 @@ print("---- Random Forest ----")
 
 
 # Set up a random forest classifier with the number of estimators (trees) = 10
-clf = RandomForestClassifier(n_estimators=100, criterion="entropy")
+clf = RandomForestClassifier(n_estimators=250, criterion="entropy")
 clf = clf.fit(trainObs, trainCls)
 print(clf)
 
 rf_pred = clf.predict(testObs)
 print(rf_pred)
+
 
 # Calculate the accuracy of the classifier.
 print("RF Accuracy:")
@@ -175,6 +177,7 @@ print(metrics.classification_report(testCls, rf_pred))
 
 #try entropy later
 
+'''
 print("---- Random Forest ----")
 # Set up a random forest classifier with the number of estimators (trees) = 10
 clf = RandomForestClassifier(n_estimators=250)
@@ -240,7 +243,7 @@ print(rf_tab)
 print(metrics.classification_report(testCls, rf_pred))
 
 #try entropy later
-
+'''
 
 '''
 # Exercise 3: Assess the quality of your random forest classifier.  What did you find?  Now change the n_estimators parameter to 100, 1000, and 10,000.  What happened?

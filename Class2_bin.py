@@ -27,11 +27,14 @@ print(cancer)
 
 # Read the Police Binned dataset into a Pandas data frame
 cover = pd.read_csv('W:/Documents/SCHOOL/Towson/2018-2022 -- DSc - Computer Security/6_Fall 2018/COSC 757 - Data Mining/Assignments/Classification Competition - 11-1/train_data.csv')
+#cover = pd.read_csv('C:/Users/whatch2/Desktop/ClassificationCompetition/train_data.csv')
+
+
 # Use the hold out method to create training data (70% random sample) and testing data (30% random sample)
 train=cover.sample(frac=0.7,random_state=1234)
 test=cover.drop(train.index)
 
-obs_bin = ['ID',
+obs_bin = [#'ID',
 #'Elevation',
 #'Aspect',
 #'Slope',
@@ -88,14 +91,14 @@ y_test = test.as_matrix(cls).ravel()
 # Use train_test_split to split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, train_size = 0.7)
 
-
+'''
 # Rescale the data to values between 1 and 0 (this gives each attribute equal weight)
 scaler = StandardScaler()
 # Fit only to the training data
 scaler.fit(X_train)
 X_train = scaler.transform(X_train)
 X_test = scaler.transform(X_test)
-
+'''
 
 # ---- Logistic Regression
 print("---- Logistic Regression ----")
@@ -207,7 +210,7 @@ print(metrics.classification_report(y_test, boost_pred))
 scores = cross_val_score(boosting, X, y)
 print(scores.mean())
 
-
+'''
 # ---- Cross Validation Sampling
 print("---- Cross Validation ----")
 
@@ -221,4 +224,4 @@ for train_index, test_index in kf.split(X):
     svm_clf.fit(X_train,y_train)
     svm_pred = svm_clf.predict(X_test)
     print((sum(y_test==svm_pred))/len(svm_pred))
-
+'''
