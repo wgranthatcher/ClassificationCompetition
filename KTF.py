@@ -96,10 +96,10 @@ def final_test(args):
     for i in y:
         if i==7:
             i==0
-
-    print(y)
     '''
+
     y = y-1
+    print(y)
 
     y = keras.utils.to_categorical(y,num_classes = 7)
     
@@ -154,6 +154,9 @@ def final_test(args):
         scaler.fit(feat_train)
         feat_train = scaler.transform(feat_train)
         feat_test = scaler.transform(feat_test)
+
+        print 'feat_train: ' + str(feat_train.shape)
+        print 'feat_test: ' + str(feat_test.shape)
 
         model = create_thousand_layer(optimizer='nadam', data_width=feat_width, neurons=32)
         batch = 16
