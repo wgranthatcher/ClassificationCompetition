@@ -146,16 +146,18 @@ def final_test(args):
 
         model = create_thousand_layer(optimizer='nadam', data_width=feat_width, neurons=32)
         #batch = 16
-		batch = args["batch_size"]
+        batch = args["batch_size"]
         #epoch = 32
         epoch = args["epochs"]
-		time0 = timeit.default_timer()
-        model.fit(feat_train, labels_train, epochs=epoch, batch_size=batch)
+
+        print 'batch: ' + str(batch)
+        print 'epochs: ' + str(epoch)
+
+        time0 = timeit.default_timer()
+        model.fit(feat_train, labels_train, epochs=epoch[0], batch_size=batch[0])
         time1 = timeit.default_timer()
-        labels_pred = model.predict(feat_test, batch_size = batch)
+        labels_pred = model.predict(feat_test, batch_size=batch[0])
         time2 = timeit.default_timer()
-
-
 
         train_time += time1-time0
         test_time += time2-time1
@@ -177,10 +179,10 @@ def final_test(args):
     '''
 
     print 'saving results for model: ' + str(m)
-    save_results(data, m, model, args["save"])
+    save_results(data, m, model, args["save"], labels_test, labels_pred, labs)
 
 
-def save_results(data, modelName, model, save):
+def save_results(data, modelName, model, save, labels_test, labels_pred, labels):
     d = datetime.datetime.today()
     month = str( '%02d' % d.month)
     day = str('%02d' % d.day)
@@ -192,12 +194,15 @@ def save_results(data, modelName, model, save):
     print("Accuracy:")
     print((sum(labels_test==labels_pred))/len(labels_pred))
     # Create a confusion matrix using Scikit-Learn confusion_matrix
-    rf_tab = confusion_matrix(labels_test, labels_pred, labels=labs)
+    rf_tab = confusion_matrix(labels_test.argmax(axis=1), labels_pred.argmax(axis=1), labels=labels)
     print(rf_tab)
     # Create a classification report for the result including precision, recall, and f measure.
     print(metrics.classification_report(labels_test, labels_pred))
 
-    text_file = open('/home/grant309/ClassificationCompetition/Results' + modelName + month + day + year + '-' + hour + min + '.txt', "w")
+    text_file = open('/home/grant309/ClassificationCompetition/Results/' + modelName + month + day + year + '-' + hour + min + '.txt', "w+")
+    text_file.write("Accureacy")
+    text_file.write((sum(labels_test==labels_pred))/len(labels_pred))
+    text_file.write(rf_tab)
     text_file.write(metrics.classification_report(labels_test, labels_pred))
     text_file.close()
 
