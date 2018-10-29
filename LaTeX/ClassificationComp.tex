@@ -1,0 +1,445 @@
+\documentclass[10pt, conference, compsocconf]{IEEEtran}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{subeqnarray}
+\usepackage{cases}
+\usepackage{url}
+\usepackage{breakurl}
+%\usepackage[breaklinks]{hyperref}
+\usepackage{ragged2e}
+\usepackage{subfig}
+%\usepackage{subcaption}
+%\usepackage{cleveref}
+\usepackage[noabbrev]{cleveref}
+%\usepackage{mwe}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\usepackage{color}
+\usepackage{epstopdf}
+\usepackage{epsfig}
+\usepackage{fixltx2e}
+\pagenumbering{arabic}
+\usepackage{color}
+\usepackage{algorithmic}
+\usepackage{verbatim}
+\usepackage[labelsep=period]{caption}
+%\captionsetup[figure]{margin={1cm,0cm}}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\newcommand{\bbf}[1]{\mbox{\boldmath$#1$\unboldmath}}
+\newcommand{\red}[1]{\textcolor{red}{\bf #1}}
+\newcommand{\warn}[1]{}
+%\captionsetup[subfigure]{subrefformat=simple,labelformat=simple}
+%\renewcommand\thesubfigure{(\alph{subfigure})}
+\def\linespaces{1.0}
+\def\baselinestretch{\linespaces}
+
+\usepackage{xcolor}
+\usepackage[export]{adjustbox}
+\usepackage{tabularx}
+
+
+\begin{document}
+
+\title{Classification Competition}
+
+\newcommand{\superast}{\raisebox{9pt}{$\ast$}}
+\newcommand{\superdagger}{\raisebox{9pt}{$\dagger$}}
+\newcommand{\superddagger}{\raisebox{9pt}{$\ddagger$}}
+\newcommand{\superS}{\raisebox{9pt}{$\S$}}
+\newcommand{\superP}{\raisebox{9pt}{$\P$}}
+
+\author{\IEEEauthorblockN{William G. Hatcher, Kevin McNamara}
+\IEEEauthorblockA{Department of Computer and Information Sciences\\ Towson University, Maryland, USA 21252, USA \\Emails:  whatch2@students.towson.edu, kmcnamara@towson.edu}}
+
+\maketitle
+
+\begin{abstract}
+Smart policing is in increasing demand as unrest grows around the world, social media allows for rapid organization and demonstration, and governments seek to reduce harm and increase safety overall. In the era of big data, the need for both citizens and law enforcement officers to have access to real-time analytics can help to drive public policy, resource allocation, and accountability. In this work, we assess eleven different machine learning algorithms, in analyzing the fatalities resulting from police shootings in the line of duty. We first assess the data and determine binning schemes, as well as clean the erroneous instances. We then conduct a thorough analysis of our algorithms by classifying eight of the original data attributes and two derived attributes. Our results show that, in general the advanced algorithms perform better, though only marginally so in most cases. We also demonstrate that our derived classes can increase the prediction Accuracy, Precision, Recall, and F1-Scores. 
+\end{abstract}
+
+\begin{IEEEkeywords}
+Data mining, Machine learning, Classification
+\end{IEEEkeywords}
+
+\section{Introduction}\label{intro}
+
+Data analytics are increasingly being applied across all manner of fields, technologies, and applications. Moreover, intelligent systems are being used to analyze data for the betterment of humanity and the protection of the public in general. For instance, self-driving vehicles have the potential to greatly reduce traffic accidents and alleviate traffic congestion. Similarly, advances in image segmentation and classification are improving disease and pathology detection. Furthermore, smart policing systems have the potential to identify and track suspects in crimes and aid in their resolution, while at the same time giving the general populace accountability for the actions taken by law enforcement. 
+
+Traditionally, technologies that can applied by law enforcement officials to have a direct impact on reducing crime and determining suspect motive and guilt have been met with widespread appeal and swift implementation. Examples include fingerprint and DNA analysis, general purpose CCTV cameras, and more recently body cameras. In addition, in the current era of big data, the ability to assess and cross-correlate policing data has significant potential for identifying suspects as well as providing meaningful policies and practices to address or reduce certain types of crime.
+
+In this work, assess a dearth of data surrounding fatal shootings of civilians by police in the line of duty to consider the implications of various police-civilian interactions and look for meaningful ways to make predictions and reduce incidences where possible. The investigated dataset covers 2015 through 2017, and includes information concerning the mental health of the suspect, whether they were armed and what with, and what type of threat the officer perceived.
+
+The remainder of this paper is as follows. In Section~\ref{description}, we provide a basic description of the datasets introduced. In Section~\ref{preprocessing} we outline the preprocessing steps taken. In Section~\ref{eda} we conduct an exploratory data analysis and make some preliminary results. In Section~\ref{classification}, we conduct a regression analysis and develop a predictive model. Finally, in Section~\ref{conclusion}, we provide concluding remarks.
+
+\section{Data Description}\label{description}
+
+The dataset utilized was compiled by the Washington Post, tracking approximately 13 details or features of every police shooting of a civilian that was fatal. The data was compiled from local news reports, social media, law enforcement websites, and independent databases. This dataset does not include people in police custody, fatal shootings by off-duty officers or non-shooting deaths. 
+
+The data includes some 2,143 instances with attributes, which include: name, date, manner of death, armed, age, gender, race, city, state, signs of mental illness, threat level, flee, and body camera. In particular, the \textit{armed} attribute indicates whether the suspect was armed and with what; \textit{manner of death} indicates whether the suspect was shot or shot and tasered; the data lists whether or not \textit{signs of mental illness} were perceived in the suspsect during the encounter; \textit{threat level} indicates the percieved threat of violence by the acting officer; the attribute \textit{flee} indicates whether the suspect fled on foot, by car, or did not flee; and \textit{body camera} indicates whether the incident was captured on body camera footage.
+
+The vast majority of the attributes comprise categorical sets of string values, including attributes \textit{manner of death} (shot, shot and Tasered), \textit{gender} (M, F), \textit{race} (A - Asian, B - Black, H - Hispanic, N - Native American, O - Other, W - White), \textit {city} (limited to all cities within the US), \textit{state} (51 possible values including the District of Columbia), \textit{threat level} (attack, other, undetermined), and \textit{flee} (foot, car, not fleeing, other). Two attributes, signs of mental illness and body camera, are binary boolean values (True, False). \textit{Name} is a unique-valued string, while \textit{armed} could be considered either a categorical set or unique-valued strings (63 possible values that may overlap). Finally, \textit{date} and \textit{age} are fixed numerical values, date formatted and integer respectively. 
+
+\begin{figure*}[ht]
+	\vspace{-2mm}
+	\centering
+	\includegraphics[width=0.19\textwidth]{./figures/"Soil Type/2702".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"Soil Type/2703".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"Soil Type/2704".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"Soil Type/2705".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"Soil Type/2706".png}\\
+	%	\caption{Basic Block Example}
+	
+	\centering	
+	\includegraphics[width=0.19\textwidth]{./figures/"Aspect".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"elevation".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"Hillshade9am".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"HillshadeNoon".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"Hillshade3pm".png}\\
+	%	\caption{Basic Block Example}
+	
+	\centering
+	\includegraphics[width=0.19\textwidth]{./figures/"HorizDistToFirePoints".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"HorizDistToHydrology".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"HorizDistToRoadways".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"VertDistToHydrology".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"Slope".png}\\
+	%	\caption{Basic Block Example}
+	
+		\centering
+	\includegraphics[width=0.19\textwidth]{./figures/"Wilderness1".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"Wilderness2".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"Wilderness3".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"Wilderness4".png}
+	\includegraphics[width=0.19\textwidth]{./figures/"Cover_Type".png}\\
+	%	\caption{Basic Block Example}
+	
+	%\captionsetup{justification=centering, width=0.9\textwidth}
+	\caption{Bar charts, histograms, and KDE plots (Top to Bottom, Left to Right) of manner of death, gender, race, flee, body camera, signs of mental illness, state, age, armed categories 1, and armed categories 2 attributes.}
+	\label{fig1}
+\end{figure*}
+
+\section{Data Preprocessing}\label{preprocessing}
+
+The state of the unprocessed dataset is poor. The dataset includes many empty values, especially in the \textit{armed}, \textit{gender}, \textit{race}, \textit{age}, and \textit{flee} attributes. Thus, data preprocessing is needed to clean the data and decide whether to replace values, and if so, what to replace them with. In addition, given the interrelation of some data items, such as city and state, it may be necessary to split or combine data items for a clarity. This can help to control for outliers and anomalies. 
+
+\subsection{Data Cleaning}
+
+As noted above, most of the data items are missing values, and no erroneous data, such as misspellings or unique cases exist. To clean the dataset, we first assess the degree of missing data for each attribute. In this case, \textit{armed} is missing 6 datapoints, \textit{gender} is missing 1 datapoint, \textit{race} is missing 103 datapoints, \textit{age} is missing 43 datapoints, and \textit{flee} is missing 36 datapoints. We began by removing the six missing from \textit{armed}, as there exist unarmed and undetermined categories, along with the one missing gender. Note that no non-binary gender has been expressed. We also removed all instances with missing age and missing flee attributes as well, bringing the total number of attributes to 2,063. Finally, removing the remaining instances missing race attributes, our final dataset includes a total of 1,987 instances. In this case, we resolved to remove the erroneous data points based on the lack of domain knowledge and clear ability to make reasonable assumptions.
+
+%\begin{figure}[htb]
+%	\centering
+%	\includegraphics[width=250pt]{./figures/"MPG Sort".png}\\
+%	\vspace{0.04cm}
+%	\caption{Bar charts of mpg, displacement, weight, and horsepower, sorted by mpg.}
+%	\vspace{0.01cm}
+%	\label{fig1}
+%\end{figure}
+%
+%\begin{figure}[htb]
+%	\centering
+%	\includegraphics[width=250pt]{./figures/"Weight Sort".png}\\
+%	\vspace{0.04cm}
+%	\caption{Bar charts of mpg, displacement, weight, and horsepower, sorted by weight.}
+%	\vspace{0.01cm}
+%	\label{fig2}
+%\end{figure}
+
+\subsection{Data Transformation}
+
+Due to the categorical nature of the majority of attributes, we have binned the various attributes into finite integer sets. These include \textit{manner of death}, \textit{armed}, \textit{gender}, \textit{race}, \textit{state}, \textit{threat level}, and \textit{flee}. In addition, because the \textit{armed} attribute includes some 63 unique instances, we have made two additional binning groups \textit{armed categories 1} and \textit{armed categories 2}. In particular, \textit{armed categories 1} condenses the set of categories down to 10, these being: Small - 0, Medium - 1, Large - 2, Projectile - 3, Two Weapons - 4, One Weapon One Projectile - 5, Vehicle - 6, Unarmed - 7, Unknown weapon - 8, Undetermined - 9, and Toy Weapon - 10. Note that the sizes Small, Medium, and Large indicate the relative size of a hand weapon that is not a projectile weapon, and that projectile weapons include any gun, nail gun, crossbow, etc. that fires some object. In \textit{armed categories 2}, we further reduce this set to Weapon - 0, Gun - 1, Vehicle - 2, Unarmed - 3, Unknown weapon - 4, Undetermined - 5, and Toy Weapon - 6. In this case, Weapon indicates any non-projectile weapon or combination of weapons, while Gun indicates any projectile weapon or combination of projectile and non-projectile weapons. 
+
+%\begin{figure*}[!ht]
+%	\vspace{-6mm}
+%	\centering
+%	\includegraphics[width=0.40\textwidth]{./figures/binning/"Equal Freq Horsepower".png}
+%	\includegraphics[width=0.40\textwidth]{./figures/binning/"Equal Width Horsepower".png}
+%	
+%	\caption{Plots of two binning methods on the Horsepower attribute both using 3 bins. These methods are Equal Frequency binning (Left) and Equal Width Binning (Right).}
+%	\label{fig2}
+%\end{figure*}
+
+\begin{center}
+	\begin{table}[t]
+		\centering \footnotesize
+		\vspace{0.01cm}
+		\caption{Basic Learning - Accuracy}
+		\hspace{1cm}
+		\begin{tabularx}{\linewidth}{ l  X  X  X  X  X }
+			\hline
+			\textbf{ACCURACY} &	\textbf{Full Set 1}&	\textbf{Full Set 2}&	\textbf{Binary Only 1}&	\textbf{Numeric Only 1}&	\textbf{Numeric Only 2} \\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			\textbf{KNN-3}&	0.596&	0.596&	0.415&	0.596&	0.596\\ \hline
+			\textbf{DT-gini}&	0.927&	0.927&	0.540&	0.897&	0.897\\ \hline
+			\textbf{DT-entropy}&	\textbf{0.930}&	\textbf{0.930}&	0.540&	0.910&	0.909\\ \hline
+			\textbf{RF-10}&	0.925&	0.927&	\textbf{0.546}&	\textbf{0.918}&	\textbf{0.917}\\ \hline
+			\textbf{NB-gaussian}&	0.634&	0.634&	0.488&	0.634&	0.634\\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+					
+			%\cellcolor{lightgray} & \cellcolor{lightgray} \\ \hline
+		\end{tabularx}\newline
+		\vspace{-0.05cm}
+		\label{Table1}
+	\end{table} \hfil
+\end{center}
+
+\begin{center}
+	\begin{table}[t]
+		\centering \footnotesize
+		\vspace{0.01cm}
+		\caption{Basic Learning - F1-Score}
+		\hspace{1cm}
+		\begin{tabularx}{\linewidth}{ l  X  X  X  X  X }
+			\hline
+			\textbf{ACCURACY} &	\textbf{Full Set 1}&	\textbf{Full Set 2}&	\textbf{Binary Only 1}&	\textbf{Numeric Only 1}&	\textbf{Numeric Only 2} \\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			\textbf{KNN-3}&	0.590&	0.590&	0.400&	0.590&	0.590\\ \hline
+			\textbf{DT-gini}&	\textbf{0.930}&	\textbf{0.930}&	0.540&	0.900&	0.900\\ \hline
+			\textbf{DT-entropy}&	\textbf{0.930}&	\textbf{0.930}&	0.540&	0.910&	0.910\\ \hline
+			\textbf{RF-10}&	0.920&	\textbf{0.930}&	\textbf{0.550}&	\textbf{0.920}&	\textbf{0.920}\\ \hline
+			\textbf{NB-gaussian}&	0.640&	0.640&	0.320&	0.640&	0.640\\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			%\cellcolor{lightgray} & \cellcolor{lightgray} \\ \hline
+		\end{tabularx}\newline
+		\vspace{-0.05cm}
+		\label{Table2}
+	\end{table} \hfil
+\end{center}
+
+
+\begin{center}
+	\begin{table}[t]
+		\centering \footnotesize
+		\vspace{0.01cm}
+		\caption{Improved Basic Learning - Accuracy}
+		\hspace{1cm}
+		\begin{tabularx}{\linewidth}{ l  X  X  X  X }
+			\hline
+			\textbf{ACCURACY} &	\textbf{Full Set 1}&	\textbf{Full Set 2}&	\textbf{Full Set 1 min-max}&	\textbf{Full Set 2 min-max} \\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			\textbf{KNN-7}&  0.596&	0.596&	0.875&	0.875 \\ \hline
+			\textbf{DT-entropy, min-leaf-5}&  0.921&	0.921&	0.921&	0.921 \\ \hline
+			\textbf{ET-entropy}&  0.825&	0.816&	0.841&	0.822 \\ \hline
+			\textbf{RF-100}& \textbf{0.942}&	\textbf{0.942}&	\textbf{0.943}&	\textbf{0.943} \\ \hline
+			\textbf{NB-multinomial}&  -	&-	&0.642&	0.642\\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			%\cellcolor{lightgray} & \cellcolor{lightgray} \\ \hline
+		\end{tabularx}\newline
+		\vspace{-0.05cm}
+		\label{Table3}
+	\end{table} \hfil
+\end{center}
+
+\begin{center}
+	\begin{table}[t]
+		\centering \footnotesize
+		\vspace{0.01cm}
+		\caption{Improved Basic Learning - F1-Score}
+		\hspace{1cm}
+		\begin{tabularx}{\linewidth}{ l  X  X  X  X }
+			\hline
+			\textbf{ACCURACY} &	\textbf{Full Set 1}&	\textbf{Full Set 2}&	\textbf{Full Set 1 min-max}&	\textbf{Full Set 2 min-max} \\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			\textbf{KNN-7}&  0.590&	0.590&	0.870&	0.870 \\ \hline
+			\textbf{DT-entropy, min-leaf-5}&  0.920	&0.920&	0.920&	0.920	 \\ \hline
+			\textbf{ET-entropy}&  0.820&	0.820&	0.840&	0.820	\\ \hline
+			\textbf{RF-100}& \textbf{0.940}&	\textbf{0.940}&	\textbf{0.94}0&	\textbf{0.940}	 \\ \hline
+			\textbf{NB-multinomial}&  -&	-&	0.620&	0.620 \\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			%\cellcolor{lightgray} & \cellcolor{lightgray} \\ \hline
+		\end{tabularx}\newline
+		\vspace{-0.05cm}
+		\label{Table4}
+	\end{table} \hfil
+\end{center}
+
+
+\begin{center}
+	\begin{table}[t]
+		\centering \footnotesize
+		\vspace{0.01cm}
+		\caption{Advanced Learning - Accuracy}
+		\hspace{1cm}
+		\begin{tabularx}{\linewidth}{ l  X  X  X  X }
+			\hline
+			\textbf{ACCURACY} &	\textbf{Full Set 1}&	\textbf{Full Set 2}&	\textbf{Full Set 1 min-max}&	\textbf{Full Set 2 min-max} \\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			\textbf{LogReg}&	0.717&	0.647&	\textbf{0.660}&	0.665\\ \hline
+			\textbf{NN-30x3-sgd}&	\textbf{0.851}&	\textbf{0.652}&	0.487&	\textbf{0.804}\\ \hline
+			\textbf{NN-30x3-lbfgs}&	0.810&	0.651&	0.481&	0.744\\ \hline
+			\textbf{SVM-rbf}&	0.790&	0.651&	-&	0.770\\ \hline
+			\textbf{Bagging}&	0.113&	0.126&	-&	0.655\\ \hline
+			\textbf{Boosting}&	0.418&	0.613&	-&	0.613 \\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			%\cellcolor{lightgray} & \cellcolor{lightgray} \\ \hline
+		\end{tabularx}\newline
+		\vspace{-0.05cm}
+		\label{Table5}
+	\end{table} \hfil
+\end{center}
+
+\begin{center}
+	\begin{table}[t]
+		\centering \footnotesize
+		\vspace{0.01cm}
+		\caption{Advanced Learning - F1-Score}
+		\hspace{1cm}
+		\begin{tabularx}{\linewidth}{ l  X  X  X  X }
+			\hline
+			\textbf{ACCURACY} &	\textbf{Full Set}&	\textbf{Binary Only}&	\textbf{Numeric Only}&	\textbf{Numeric Only min-max} \\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			\textbf{LogReg}&	0.700&	0.630&	\textbf{0.630}&	0.640 \\ \hline
+			\textbf{NN-30x3-sgd}&	\textbf{0.850}&	\textbf{0.640}&	0.240&	\textbf{0.800} \\ \hline
+			\textbf{NN-30x3-lbfgs}&	0.810&	0.640&	0.370&	0.740 \\ \hline
+			\textbf{SVM-rbf}&	0.810&	0.640&	-&	0.740 \\ \hline
+			\textbf{Bagging}&	0.660&	0.740&	-&	0.640 \\ \hline
+			\textbf{Boosting}&	0.580&	0.620&	-&	0.610 \\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			%\cellcolor{lightgray} & \cellcolor{lightgray} \\ \hline
+		\end{tabularx}\newline
+		\vspace{-0.05cm}
+		\label{Table6}
+	\end{table} \hfil
+\end{center}
+
+\begin{center}
+	\begin{table}[t]
+		\centering \footnotesize
+		\vspace{0.01cm}
+		\caption{Top Basic Learning - Random Forests}
+		\hspace{1cm}
+		\begin{tabularx}{\linewidth}{ l  X  X  X  X }
+			\hline
+			\textbf{FULL DATA min-max} &	\textbf{Accuracy}&	\textbf{Precision}&	\textbf{Recall}&	\textbf{F1-Score} \\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			\textbf{RF-250}&	0.943&	0.94&	0.94&	0.94\\ \hline
+			\textbf{RF-500}&	0.943&	0.94&	0.94&	0.94\\ \hline
+			\textbf{RF-1000}&	0.943&	0.94&	0.94&	0.94\\ \hline
+			\textbf{RF-100-entropy}&	0.945&	\textbf{0.95}&	\textbf{0.9}5&	0.94\\ \hline
+			\red{RF-250-entropy}&	\red{0.951}&	\red{0.95}&	\red{0.95}&	\red{0.95} \\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			%\cellcolor{lightgray} & \cellcolor{lightgray} \\ \hline
+		\end{tabularx}\newline
+		\vspace{-0.05cm}
+		\label{Table7}
+	\end{table} \hfil
+\end{center}
+
+\begin{center}
+	\begin{table}[t]
+		\centering \footnotesize
+		\vspace{0.01cm}
+		\caption{Top Advanced Learning - Dense Neural Networks with TensorFlow}
+		\hspace{1cm}
+		\begin{tabularx}{\linewidth}{ l  X  X  X  X }
+			\hline
+			\textbf{FULL DATA min-max} &	\textbf{Accuracy*}&	\textbf{Precision}&	\textbf{Recall}&	\textbf{F1-Score} \\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			\textbf{250-100-10-7\_1-64}&	0.937*	&0.78&	0.77&	0.76\\ \hline
+			\textbf{250-100-10-7\_1-64-bin}&	0.899*&	0.62&	0.63&	0.61\\ \hline
+			\textbf{250-100-10-7\_1-64-mult}&	0.917*	&0.69&	0.7&	0.69\\ \hline
+			\textbf{250-100-10-7\_32-16}&	\textbf{0.968*}&	\textbf{0.90}&	\textbf{0.88}&	\textbf{0.89}\\ \hline
+			\textbf{500-250-100-10-7\_32-16}&	0.958*&	0.84&	0.85&	0.84\\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			%\cellcolor{lightgray} & \cellcolor{lightgray} \\ \hline
+		\end{tabularx}\newline
+		\vspace{-0.05cm}
+		\label{Table8}
+	\end{table} \hfil
+\end{center}
+
+\section{Exploratory Data Analysis}\label{eda}
+
+With the exception of the \textit{armed} attribute and the derived \textit{armed categories 1} attributes, we can see the majority of the attributes in Fig.~\ref{fig1}. Note that the x-axis labels were removed for the state attribute for clarity. Also, as the number categories of the \textit{armed} attribute natively are 63, we show only the reduced \textit{armed categories 2} derived attribute instead. Also notice that the only attribute to resemble a normal distribution is \textit{age}. We also note that there are no direct positive or negative relationships observed from which to recommend a particular fitting method of any given pair of attributes. Indeed, sorting the data by each attribute shows not direct correlations. We can see that many attributes are highly biased, which may adversely affect the classification results. In addition, in the classification evaluation to follow, we will normalize our binned attributes to determine if they have any impact on the learning mechanisms or the classification results.
+
+\section{Classification Analysis}\label{classification}
+
+We now carry out an evaluation of multiple classification algorithms as applied to our fatal police shooting data. We first introduce the primary sampling methodology used, develop the metrics for evaluation, describe the algorithms evaluated, and then provide the evaluation results.
+
+\subsection{Sampling Method}
+
+In sampling the fatal police shooting dataset, we apply the holdout method, separating our data into approximately 70\% training and 30\% testing sets. Moreover, we select the data at random. Ideally, this should be carried out multiple times and cross-validated. Otherwise, we may find that the particular split affects our learning mechanisms adversely, providing skewed results not representative of the data overall.  
+
+\subsection{Metrics}
+
+The primary metrics we will use to assess the results of our classification are Accuracy, Precision, Recall, and F1-Score. In classifying the test data once trained, the resulting classifications fall into one of four categories: True Positive ($TP$), True Negative ($TN$), False Positive ($FP$), and False Negative ($FN$). In more detail, a prediction is labeled as $TP$ if the correct positive class was assigned correctly as positive. Likewise a prediction is labeled as $FP$ if the predicted class was the positive class, but the ground truth was the negative class. So if the positive class is 1, then predicting 1 when the answer was 0 is an $FP$. Note that this becomes more difficult in multivariate systems. In this case, we look at each category in a class alone as the positive class. So for values 0, 1, and 2, we extract $TP$, $FP$, $TN$, $FN$, Precision, Recall and F1-Score values three times, setting 0, 1, and 2 each as the positive class and the other two as the negative. Here, if 0 is positive, then 1 and 2 are negative, and $FP$ includes both 1 and 2 ground truth values predicted as 0. Thus, we derive 3 Precision, Recall, and F1-Score values and take the average of each. Also note that the overall Accuracy remains the same.
+
+Extending from our definitions of $TP$, $FP$, $TN$ and $FN$, we define Accuracy, Precision, Recall, and F1-Score as follows:
+\begin{equation}
+\text{Accuracy} = \frac{TP + TN}{TP + FP + TN + FN}.
+\end{equation}
+\begin{equation}
+\text{Precision} = \frac{TP}{FP + TP}.
+\end{equation}
+\begin{equation}
+\text{Recall} = \frac{TP}{FN + TP}.
+\end{equation}
+\begin{equation}
+F1=\frac{2*(\text{Precision}* \text{Recall})}{\text{Precision}+\text{Recall}},
+\end{equation}
+
+\noindent Notice that Fi-Score is defined as the harmonic average of precision and recall.
+
+\subsection{Algorithms}
+
+In this evaluation, we compare five Basic and six Advanced learning algorithms. What's more, we compare these across ten binned attributes (\textit{age}, \textit{armed}, \textit{body camera}, \textit{flee}, \textit{gender}, \textit{manner of death}, \textit{signs of mental illness}, \textit{race}, \textit{state}, and \textit{threat level}) as well as two of our derived attributes (\textit{armed categories 1 }and \textit{armed categories 2}). The Basic algorithms are K-Nearest Neighbors (KNN-3), two Decision Trees (DT-CART and DT-entropy), Random Forest (RF-10), and Naive Bayes (NB-gaussian). The Advanced learning algorithms are Logistic Regression (LogReg), two Multilayer Perceptrons (NN-30x3-sgd and NN-30x3-lbfgs), SVM (SVM-rbf), Bagging and Boosting.  
+
+Regarding the Basic algorithms, we apply the K-Nearest Neighbors algorithm for classification, setting the initial number of clusters to 3 and using the euclidean distance to segregate clusters. Also, we utilize two examples of Decision Trees that use the CART algorithm to build the binary tree. The first uses the gini index to split the data and second uses entropy instead. For the Random Forest classifier, this operates by implementing multiple decision trees and taking the arithmetic Mode of all of them. In this case, we set the initial number of trees to 10. Finally, we additionally use the probabilistic Naive Bayes classifier. 
+
+Concerning the Advanced algorithms, we use the Logistic Regression with a inverse regularization strength parameter set to 100,000. We also consider two neural networks of the same shape (i.e., three layers of 30 neurons each). The two are separated by the solver parameter, otherwise known as the optimization algorithms, in this case stochastic gradient descent and limited memory Broyden–Fletcher–Goldfarb–Shanno (LBFGS). In this case, both optimizers attempt to minimize the loss function by following the steepest descent of the gradient of the target function. Additionally, we apply the Support Vector Machine (SVM) with the Radial basis function (rbf) kernel, which is used to map the inputs into higher dimensions to determine a gap as large as possible between class values. Finally, we use two Ensemble learning methods: Bagging and Boosting. In Bagging, we subdivide the original dataset into multiple subsets, and each is supplied to a learning (in this case the same Naive Bayes algorithm above). The multiple parallel learning algorithms provide predictions and the class with the highest mean probability is selected. Here we use the default value of 10 estimators. In Boosting, the learning estimator is applied to the original data, and weight are then adjusted based on the incorrectly classified instances repetitively. Here we apply 100 estimators of the AdaBoost-SAMME algorithm.  
+
+\subsection{Evaluation}
+
+We now consider the results of applying the five Basic and six Advanced learning algorithms to classify our data. Note that we have classified eight of the original classes and two derived classes, as denoted above. The results of our evaluation can be seen in Tables~\ref{Table1}-\ref{Table4}. First, we note that all of the algorithms struggled to classify the \textit{age} attribute, which is to be expected, as this attribute is actually a continuous integer variable better suited to regression analysis. Indeed the accuracy scores for \textit{age} were less than 5\%. Second, focusing on top performers, we see that the Accuracy scores, Precision, Recall, and F1-Scores were all quite significant in the binary classes of \textit{body camera}, \textit{gender}, and \textit{manner of death}. We should note that these classes are very highly skewed, so this result is also not a surprise. Indeed, it may be possible to attain such accuracy by simply predicting only the dominant class. 
+
+Third, looking simply at Accuracy, we see that the advanced algorithms generally performed better, though in some cases only marginally so. Indeed, in many instances, the differences between the top performing advanced algorithms and their basic counterparts are only a couple of percent. The best performer across all attributes appears to be the SVM algorithm. Fourth, considering Precision and Recall, we see that Naive Bayes had the best Precision scores of the basic algorithms, while Boosting won for Precision in the advanced algorithms. In contrast, neither was nearly so successful in terms of Recall. In fact, Naive Bayes was often the worst out of all algorithms in terms of Recall. In the case of the advanced algorithms, Logistic Regression and the first Neural Network were the top performers. Considering that Precision tells us what proportion of positive identifications were actually correct, while Recall telling us what proportion of actual positives were identified correctly, we can conjecture about the nature of Naive Bayes. Indeed, it appears to incur quite a high $FN$ rate, while maintaining a significantly low $FP$ rate.
+
+Finally, considering the F1-Scores, which take the harmonic mean of Precision and Recall, we get an estimation of how well the algorithms perform overall. Those with the highest F1 generally have well balanced Precision and Recall. From our results in Table~\ref{Table4}, we can see that Boosting performed the best in this category.
+
+\vspace{-0.01cm}
+\section{Conclusion}\label{conclusion}
+\vspace{-0.01cm}
+
+Properly assessing law enforcement interactions with the public can provide significant public policy decisions and can lead to more safe and congenial environment. In this work, we have assessed eleven machine learning algorithms for classification in a dataset of police-involved shooting fatalities. The results demonstrate, in some cases, a high level of accuracy and strong predictive qualities, especially on binary data, such as gender, body cameras, and manner of death. Moreover, we have considered in detail the abilities of each algorithm applied, overall observing that the advanced algorithms indeed perform better. However, this performance is not typically significantly better, only marginally so. In future work, it would be necessary to expand the assessment to improve the performance of each algorithm through parameter tuning. 
+
+%\bibliographystyle{abbrv}
+%\vspace{-0.01cm}
+%\bibliography{ref}
+
+\end{document}

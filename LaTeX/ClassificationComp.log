@@ -1,0 +1,1325 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.8)  29 OCT 2018 19:03
+entering extended mode
+**./ClassificationComp.tex
+(ClassificationComp.tex
+LaTeX2e <2017-04-15>
+Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ieeetran
+\IEEEtran.cls"
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpdimenC=\dimen104
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmpcountC=\count81
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
+
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\o
+t1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen105
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen106
+\CLASSINFOnormalsizeunitybaselineskip=\dimen107
+\IEEEnormaljot=\dimen108
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+\IEEEquantizedlength=\dimen109
+\IEEEquantizedlengthdiff=\dimen110
+\IEEEquantizedtextheightdiff=\dimen111
+\IEEEilabelindentA=\dimen112
+\IEEEilabelindentB=\dimen113
+\IEEEilabelindent=\dimen114
+\IEEEelabelindent=\dimen115
+\IEEEdlabelindent=\dimen116
+\IEEElabelindent=\dimen117
+\IEEEiednormlabelsep=\dimen118
+\IEEEiedmathlabelsep=\dimen119
+\IEEEiedtopsep=\skip41
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEsubeqnnumrollback=\count91
+\@IEEEquantizeheightA=\dimen120
+\@IEEEquantizeheightB=\dimen121
+\@IEEEquantizeheightC=\dimen122
+\@IEEEquantizeprevdepth=\dimen123
+\@IEEEquantizemultiple=\count92
+\@IEEEquantizeboxA=\box26
+\@IEEEtmpitemindent=\dimen124
+\IEEEPARstartletwidth=\dimen125
+\c@IEEEbiography=\count93
+\@IEEEtranrubishbin=\box27
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts
+\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts
+\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\
+amsmath.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\
+amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\
+amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen126
+))
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\
+amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen127
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\
+amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count94
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count95
+\leftroot@=\count96
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count97
+\DOTSCASE@=\count98
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen128
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
+\dotsspace@=\muskip10
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
+\tag@help=\toks17
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
+\andhelp@=\toks18
+\eqnshift@=\dimen129
+\alignsep@=\dimen130
+\tagshift@=\dimen131
+\tagwidth@=\dimen132
+\totwidth@=\dimen133
+\lineht@=\dimen134
+\@envbody=\toks19
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\ar
+ray.sty"
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen135
+\extrarowheight=\dimen136
+\NC@list=\toks21
+\extratabsurround=\skip47
+\backup@length=\skip48
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subeqnar
+ray\subeqnarray.sty"
+Package: subeqnarray 2004/04/15 v2.1c subeqnarray package
+\c@subequation=\count106
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cases\ca
+ses.sty"
+Package: cases 2002/05/02 ver 2.5 
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.
+sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\breakurl
+\breakurl.sty"
+Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\
+xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyva
+l\xkeyval.tex"
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyva
+l\xkvutils.tex"
+\XKV@toks=\toks22
+\XKV@tempa@toks=\toks23
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyva
+l\keyval.tex"))
+\XKV@depth=\count107
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdi
+ek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+
+Package breakurl Warning: You are using breakurl while processing via pdflatex.
+
+(breakurl)                \burl will be just a synonym of \url.
+(breakurl)                 on input line 48.
+
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\ragge
+d2e.sty"
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\every
+sel.sty"
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip49
+\RaggedLeftLeftskip=\skip50
+\RaggedRightLeftskip=\skip51
+\CenteringRightskip=\skip52
+\RaggedLeftRightskip=\skip53
+\RaggedRightRightskip=\skip54
+\CenteringParfillskip=\skip55
+\RaggedLeftParfillskip=\skip56
+\RaggedRightParfillskip=\skip57
+\JustifyingParfillskip=\skip58
+\CenteringParindent=\skip59
+\RaggedLeftParindent=\skip60
+\RaggedRightParindent=\skip61
+\JustifyingParindent=\skip62
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\s
+ubfig.sty"
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\
+caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\
+caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen137
+\captionmargin@=\dimen138
+\captionwidth=\dimen139
+\caption@tempdima=\dimen140
+\caption@indent=\dimen141
+\caption@parindent=\dimen142
+\caption@hangindent=\dimen143
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi .
+\c@ContinuedFloat=\count108
+)
+\c@KVtest=\count109
+\sf@farskip=\skip63
+\sf@captopadj=\dimen144
+\sf@capskip=\skip64
+\sf@nearskip=\skip65
+\c@subfigure=\count110
+\c@subfigure@save=\count111
+\c@lofdepth=\count112
+\c@subtable=\count113
+\c@subtable@save=\count114
+\c@lotdepth=\count115
+\sf@top=\skip66
+\sf@bottom=\skip67
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cleveref
+\cleveref.sty"
+Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
+Package cleveref Info: `subfig' support loaded on input line 2983.
+Package cleveref Info: no abbreviation of names on input line 7493.
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fon
+tenc.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1e
+nc.def"
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 105.
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t
+1ptm.fd"
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+))
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics
+\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics
+\graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics
+\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics
+-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics
+-def\pdftex.def"
+File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen145
+\Gin@req@width=\dimen146
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow
+\multirow.sty"
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip68
+\multirow@cntb=\count116
+\multirow@dima=\skip69
+\bigstrutjot=\dimen147
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inp
+utenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks24
+\inpenc@posthook=\toks25
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf
+8.def"
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1e
+nc.dfu"
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1
+enc.dfu"
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\oms
+enc.dfu"
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorith
+m2e\algorithm2e.sty"
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count117
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ift
+hen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip70
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifoddpag
+e\ifoddpage.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count118
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xs
+pace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ltxmisc\
+relsize.sty"
+Package: relsize 2003/07/04 ver 3.1
+)
+\skiptotal=\skip71
+\skiplinenumber=\skip72
+\skiprule=\skip73
+\skiphlne=\skip74
+\skiptext=\skip75
+\skiplength=\skip76
+\algomargin=\skip77
+\skipalgocfslide=\skip78
+\algowidth=\dimen148
+\inoutsize=\dimen149
+\inoutindent=\dimen150
+\interspacetitleruled=\dimen151
+\interspacealgoruled=\dimen152
+\interspacetitleboxruled=\dimen153
+\algocf@ruledwidth=\skip79
+\algocf@inoutbox=\box30
+\algocf@inputbox=\box31
+\AlCapSkip=\skip80
+\AlCapHSkip=\skip81
+\algoskipindent=\skip82
+\algocf@nlbox=\box32
+\algocf@hangingbox=\box33
+\algocf@untilbox=\box34
+\algocf@skipuntil=\skip83
+\algocf@capbox=\box35
+\algocf@lcaptionbox=\skip84
+\algoheightruledefault=\skip85
+\algoheightrule=\skip86
+\algotitleheightruledefault=\skip87
+\algotitleheightrule=\skip88
+\c@algocfline=\count119
+\c@algocfproc=\count120
+\c@algocf=\count121
+\algocf@algoframe=\box36
+\algocf@algobox=\box37
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics
+\color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics
+-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek
+\epstopdf.sty"
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek
+\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdi
+ek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek
+\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdi
+ek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdi
+ek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek
+\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdi
+ek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdi
+ek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdi
+ek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdi
+ek\pdftexcmds.sty"
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+))
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics
+\epsfig.sty"
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+\epsfxsize=\dimen154
+\epsfysize=\dimen155
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fix
+ltx2e.sty"
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorith
+ms\algorithmic.sty"
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count122
+\c@ALC@line=\count123
+\c@ALC@rem=\count124
+\c@ALC@depth=\count125
+\ALC@tlm=\skip89
+\algorithmicindent=\skip90
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\ve
+rbatim.sty"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks26
+\verbatim@line=\toks27
+\verbatim@in@stream=\read1
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\x
+color.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics
+-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbo
+x\adjustbox.sty"
+Package: adjustbox 2018/04/08 v1.1 Adjusting TeX boxes (trim, clip, ...)
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbo
+x\adjcalc.sty"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbo
+x\trimclip.sty"
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\collectb
+ox\collectbox.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box38
+)
+\tc@llx=\dimen156
+\tc@lly=\dimen157
+\tc@urx=\dimen158
+\tc@ury=\dimen159
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbo
+x\tc-pdftex.def"
+File: tc-pdftex.def 2018/04/08 v2.1 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen160
+\adjbox@Height=\dimen161
+\adjbox@Depth=\dimen162
+\adjbox@Totalheight=\dimen163
+\adjbox@pwidth=\dimen164
+\adjbox@pheight=\dimen165
+\adjbox@pdepth=\dimen166
+\adjbox@ptotalheight=\dimen167
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ltxmisc\
+varwidth.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box39
+\sift@deathcycles=\count126
+\@vwid@loff=\dimen168
+\@vwid@roff=\dimen169
+))
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\ta
+bularx.sty"
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+\TX@col@width=\dimen170
+\TX@old@table=\dimen171
+\TX@old@col=\dimen172
+\TX@target=\dimen173
+\TX@delta=\dimen174
+\TX@cols=\count127
+\TX@ftn=\toks28
+)
+
+LaTeX Warning: Unused global option(s):
+    [compsocconf].
+
+(ClassificationComp.aux)
+\openout1 = `ClassificationComp.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 47.
+
+-- Lines per column: 56 (exact).
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 47.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\s
+upp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count128
+\scratchdimen=\dimen175
+\scratchbox=\box40
+\nofMPsegments=\count129
+\nofMParguments=\count130
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count131
+\MPscratchDim=\dimen176
+\MPnumerator=\count132
+\makeMPintoPDFobject=\count133
+\everyMPtoPDFconversion=\toks30
+)
+<./figures/"Soil Type/2702".png, id=1, 578.16pt x 432.1746pt>
+File: ./figures/"Soil Type/2702".png Graphic file (type png)
+<use ./figures/"Soil Type/2702".png>
+Package pdftex.def Info: ./figures/"Soil Type/2702".png  used on input line 91.
+ on input line 91.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+91.
+<./figures/"Soil Type/2703".png, id=3, 578.16pt x 432.1746pt>
+File: ./figures/"Soil Type/2703".png Graphic file (type png)
+<use ./figures/"Soil Type/2703".png>
+Package pdftex.def Info: ./figures/"Soil Type/2703".png  used on input line 92.
+ on input line 92.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+92.
+<./figures/"Soil Type/2704".png, id=4, 578.16pt x 432.1746pt>
+File: ./figures/"Soil Type/2704".png Graphic file (type png)
+<use ./figures/"Soil Type/2704".png>
+Package pdftex.def Info: ./figures/"Soil Type/2704".png  used on input line 93.
+ on input line 93.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+93.
+<./figures/"Soil Type/2705".png, id=5, 578.16pt x 432.1746pt>
+File: ./figures/"Soil Type/2705".png Graphic file (type png)
+<use ./figures/"Soil Type/2705".png>
+Package pdftex.def Info: ./figures/"Soil Type/2705".png  used on input line 94.
+ on input line 94.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+94.
+<./figures/"Soil Type/2706".png, id=6, 578.16pt x 432.1746pt>
+File: ./figures/"Soil Type/2706".png Graphic file (type png)
+<use ./figures/"Soil Type/2706".png>
+Package pdftex.def Info: ./figures/"Soil Type/2706".png  used on input line 95.
+ on input line 95.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+95.
+<./figures/"Aspect".png, id=7, 578.16pt x 432.1746pt>
+File: ./figures/"Aspect".png Graphic file (type png)
+<use ./figures/"Aspect".png>
+Package pdftex.def Info: ./figures/"Aspect".png  used on input line 99. on inpu
+t line 99.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+99.
+<./figures/"elevation".png, id=8, 578.16pt x 432.1746pt>
+File: ./figures/"elevation".png Graphic file (type png)
+<use ./figures/"elevation".png>
+Package pdftex.def Info: ./figures/"elevation".png  used on input line 100. on 
+input line 100.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+100.
+<./figures/"Hillshade9am".png, id=9, 578.16pt x 432.1746pt>
+File: ./figures/"Hillshade9am".png Graphic file (type png)
+<use ./figures/"Hillshade9am".png>
+Package pdftex.def Info: ./figures/"Hillshade9am".png  used on input line 101. 
+on input line 101.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+101.
+<./figures/"HillshadeNoon".png, id=10, 578.16pt x 432.1746pt>
+File: ./figures/"HillshadeNoon".png Graphic file (type png)
+<use ./figures/"HillshadeNoon".png>
+Package pdftex.def Info: ./figures/"HillshadeNoon".png  used on input line 102.
+ on input line 102.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+102.
+<./figures/"Hillshade3pm".png, id=11, 578.16pt x 432.1746pt>
+File: ./figures/"Hillshade3pm".png Graphic file (type png)
+<use ./figures/"Hillshade3pm".png>
+Package pdftex.def Info: ./figures/"Hillshade3pm".png  used on input line 103. 
+on input line 103.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+103.
+<./figures/"HorizDistToFirePoints".png, id=12, 578.16pt x 432.1746pt>
+File: ./figures/"HorizDistToFirePoints".png Graphic file (type png)
+<use ./figures/"HorizDistToFirePoints".png>
+Package pdftex.def Info: ./figures/"HorizDistToFirePoints".png  used on input l
+ine 107. on input line 107.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+107.
+<./figures/"HorizDistToHydrology".png, id=13, 578.16pt x 432.1746pt>
+File: ./figures/"HorizDistToHydrology".png Graphic file (type png)
+<use ./figures/"HorizDistToHydrology".png>
+Package pdftex.def Info: ./figures/"HorizDistToHydrology".png  used on input li
+ne 108. on input line 108.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+108.
+<./figures/"HorizDistToRoadways".png, id=14, 578.16pt x 432.1746pt>
+File: ./figures/"HorizDistToRoadways".png Graphic file (type png)
+<use ./figures/"HorizDistToRoadways".png>
+Package pdftex.def Info: ./figures/"HorizDistToRoadways".png  used on input lin
+e 109. on input line 109.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+109.
+<./figures/"VertDistToHydrology".png, id=15, 578.16pt x 432.1746pt>
+File: ./figures/"VertDistToHydrology".png Graphic file (type png)
+<use ./figures/"VertDistToHydrology".png>
+Package pdftex.def Info: ./figures/"VertDistToHydrology".png  used on input lin
+e 110. on input line 110.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+110.
+<./figures/"Slope".png, id=16, 578.16pt x 432.1746pt>
+File: ./figures/"Slope".png Graphic file (type png)
+<use ./figures/"Slope".png>
+Package pdftex.def Info: ./figures/"Slope".png  used on input line 111. on inpu
+t line 111.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+111.
+<./figures/"Wilderness1".png, id=17, 578.16pt x 432.1746pt>
+File: ./figures/"Wilderness1".png Graphic file (type png)
+<use ./figures/"Wilderness1".png>
+Package pdftex.def Info: ./figures/"Wilderness1".png  used on input line 115. o
+n input line 115.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+115.
+<./figures/"Wilderness2".png, id=18, 578.16pt x 432.1746pt>
+File: ./figures/"Wilderness2".png Graphic file (type png)
+<use ./figures/"Wilderness2".png>
+Package pdftex.def Info: ./figures/"Wilderness2".png  used on input line 116. o
+n input line 116.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+116.
+<./figures/"Wilderness3".png, id=19, 578.16pt x 432.1746pt>
+File: ./figures/"Wilderness3".png Graphic file (type png)
+<use ./figures/"Wilderness3".png>
+Package pdftex.def Info: ./figures/"Wilderness3".png  used on input line 117. o
+n input line 117.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+117.
+<./figures/"Wilderness4".png, id=20, 578.16pt x 432.1746pt>
+File: ./figures/"Wilderness4".png Graphic file (type png)
+<use ./figures/"Wilderness4".png>
+Package pdftex.def Info: ./figures/"Wilderness4".png  used on input line 118. o
+n input line 118.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+118.
+<./figures/"Cover_Type".png, id=21, 578.16pt x 432.1746pt>
+File: ./figures/"Cover_Type".png Graphic file (type png)
+<use ./figures/"Cover_Type".png>
+Package pdftex.def Info: ./figures/"Cover_Type".png  used on input line 119. on
+ input line 119.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+119.
+
+Underfull \vbox (badness 1412) has occurred while \output is active []
+
+ [1{C:/Users/William Hatcher/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts
+\umsa.fd")
+("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts
+\umsb.fd")
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
+[]|\T1/ptm/b/n/8 Binary
+ []
+
+
+Overfull \hbox (2.83325pt too wide) in paragraph at lines 188--188
+[]|\T1/ptm/b/n/8 Numeric
+ []
+
+
+Overfull \hbox (2.83325pt too wide) in paragraph at lines 188--188
+[]|\T1/ptm/b/n/8 Numeric
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+[]|\T1/ptm/b/n/8 Binary
+ []
+
+
+Overfull \hbox (2.83325pt too wide) in paragraph at lines 215--215
+[]|\T1/ptm/b/n/8 Numeric
+ []
+
+
+Overfull \hbox (2.83325pt too wide) in paragraph at lines 215--215
+[]|\T1/ptm/b/n/8 Numeric
+ []
+
+
+Underfull \hbox (badness 5091) in paragraph at lines 243--243
+\T1/ptm/b/n/8 1 min-
+ []
+
+
+Underfull \hbox (badness 5091) in paragraph at lines 243--243
+\T1/ptm/b/n/8 2 min-
+ []
+
+
+Underfull \hbox (badness 5091) in paragraph at lines 270--270
+\T1/ptm/b/n/8 1 min-
+ []
+
+
+Underfull \hbox (badness 5091) in paragraph at lines 270--270
+\T1/ptm/b/n/8 2 min-
+ []
+
+[2 <./figures/Soil Type/2702.png> <./figures/Soil Type/2703.png> <./figures/Soi
+l Type/2704.png> <./figures/Soil Type/2705.png> <./figures/Soil Type/2706.png> 
+<./figures/Aspect.png> <./figures/elevation.png> <./figures/Hillshade9am.png> <
+./figures/HillshadeNoon.png> <./figures/Hillshade3pm.png> <./figures/HorizDistT
+oFirePoints.png> <./figures/HorizDistToHydrology.png> <./figures/HorizDistToRoa
+dways.png> <./figures/VertDistToHydrology.png> <./figures/Slope.png> <./figures
+/Wilderness1.png> <./figures/Wilderness2.png> <./figures/Wilderness3.png> <./fi
+gures/Wilderness4.png> <./figures/Cover_Type.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 327--327
+[]|\T1/ptm/b/n/8 Binary
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--327
+[]|\T1/ptm/b/n/8 Numeric
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--327
+[]|\T1/ptm/b/n/8 Numeric
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--327
+\T1/ptm/b/n/8 Only
+ []
+
+
+Overfull \hbox (4.15764pt too wide) in paragraph at lines 354--354
+[]|\T1/ptm/b/n/8 Accuracy| 
+ []
+
+
+Overfull \hbox (3.13351pt too wide) in paragraph at lines 354--354
+[]|\T1/ptm/b/n/8 Precision| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--354
+[]|\T1/ptm/b/n/8 F1-
+ []
+
+
+Overfull \hbox (8.7617pt too wide) in paragraph at lines 381--381
+[]|\T1/ptm/b/n/8 Accuracy*| 
+ []
+
+
+Overfull \hbox (3.73758pt too wide) in paragraph at lines 381--381
+[]|\T1/ptm/b/n/8 Precision| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+[]|\T1/ptm/b/n/8 F1-
+ []
+
+[3] [4]
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[5
+
+] (ClassificationComp.aux) ) 
+Here is how much of TeX's memory you used:
+ 9453 strings out of 493312
+ 160014 string characters out of 3125475
+ 279681 words of memory out of 3000000
+ 12800 multiletter control sequences out of 15000+200000
+ 109645 words of font info for 123 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 61i,11n,96p,1441b,404s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/William Hatcher/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/William Hatcher/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/William H
+atcher/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><C:/Users/William Hatcher/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb><C:/Users/William Hatcher/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/William Hatcher/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/William Hatche
+r/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/
+William Hatcher/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a
+.pfb>
+Output written on ClassificationComp.pdf (5 pages, 527810 bytes).
+PDF statistics:
+ 88 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+
