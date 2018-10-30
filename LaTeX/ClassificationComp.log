@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.8)  29 OCT 2018 20:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.8)  29 OCT 2018 20:27
 entering extended mode
 **./ClassificationComp.tex
 (ClassificationComp.tex
@@ -1031,269 +1031,285 @@ Underfull \hbox (badness 3690) in paragraph at lines 62--64
 led test-ing
  []
 
-<./figures/"Soil Type/2702".png, id=1, 578.16pt x 432.1746pt>
-File: ./figures/"Soil Type/2702".png Graphic file (type png)
-<use ./figures/"Soil Type/2702".png>
-Package pdftex.def Info: ./figures/"Soil Type/2702".png  used on input line 85.
- on input line 85.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-85.
-<./figures/"Soil Type/2703".png, id=3, 578.16pt x 432.1746pt>
-File: ./figures/"Soil Type/2703".png Graphic file (type png)
-<use ./figures/"Soil Type/2703".png>
-Package pdftex.def Info: ./figures/"Soil Type/2703".png  used on input line 86.
- on input line 86.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-86.
-<./figures/"Soil Type/2704".png, id=4, 578.16pt x 432.1746pt>
-File: ./figures/"Soil Type/2704".png Graphic file (type png)
-<use ./figures/"Soil Type/2704".png>
-Package pdftex.def Info: ./figures/"Soil Type/2704".png  used on input line 87.
- on input line 87.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-87.
-<./figures/"Soil Type/2705".png, id=5, 578.16pt x 432.1746pt>
-File: ./figures/"Soil Type/2705".png Graphic file (type png)
-<use ./figures/"Soil Type/2705".png>
-Package pdftex.def Info: ./figures/"Soil Type/2705".png  used on input line 88.
- on input line 88.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-88.
-<./figures/"Soil Type/2706".png, id=6, 578.16pt x 432.1746pt>
-File: ./figures/"Soil Type/2706".png Graphic file (type png)
-<use ./figures/"Soil Type/2706".png>
-Package pdftex.def Info: ./figures/"Soil Type/2706".png  used on input line 89.
- on input line 89.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-89.
-<./figures/"Aspect".png, id=7, 578.16pt x 432.1746pt>
-File: ./figures/"Aspect".png Graphic file (type png)
-<use ./figures/"Aspect".png>
-Package pdftex.def Info: ./figures/"Aspect".png  used on input line 93. on inpu
-t line 93.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-93.
-<./figures/"elevation".png, id=8, 578.16pt x 432.1746pt>
-File: ./figures/"elevation".png Graphic file (type png)
-<use ./figures/"elevation".png>
-Package pdftex.def Info: ./figures/"elevation".png  used on input line 94. on i
-nput line 94.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-94.
-<./figures/"Hillshade9am".png, id=9, 578.16pt x 432.1746pt>
-File: ./figures/"Hillshade9am".png Graphic file (type png)
-<use ./figures/"Hillshade9am".png>
-Package pdftex.def Info: ./figures/"Hillshade9am".png  used on input line 95. o
-n input line 95.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-95.
-<./figures/"HillshadeNoon".png, id=10, 578.16pt x 432.1746pt>
-File: ./figures/"HillshadeNoon".png Graphic file (type png)
-<use ./figures/"HillshadeNoon".png>
-Package pdftex.def Info: ./figures/"HillshadeNoon".png  used on input line 96. 
-on input line 96.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-96.
-<./figures/"Hillshade3pm".png, id=11, 578.16pt x 432.1746pt>
-File: ./figures/"Hillshade3pm".png Graphic file (type png)
-<use ./figures/"Hillshade3pm".png>
-Package pdftex.def Info: ./figures/"Hillshade3pm".png  used on input line 97. o
-n input line 97.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-97.
-<./figures/"HorizDistToFirePoints".png, id=12, 578.16pt x 432.1746pt>
-File: ./figures/"HorizDistToFirePoints".png Graphic file (type png)
-<use ./figures/"HorizDistToFirePoints".png>
-Package pdftex.def Info: ./figures/"HorizDistToFirePoints".png  used on input l
-ine 101. on input line 101.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-101.
-<./figures/"HorizDistToHydrology".png, id=13, 578.16pt x 432.1746pt>
-File: ./figures/"HorizDistToHydrology".png Graphic file (type png)
-<use ./figures/"HorizDistToHydrology".png>
-Package pdftex.def Info: ./figures/"HorizDistToHydrology".png  used on input li
-ne 102. on input line 102.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-102.
-<./figures/"HorizDistToRoadways".png, id=14, 578.16pt x 432.1746pt>
-File: ./figures/"HorizDistToRoadways".png Graphic file (type png)
-<use ./figures/"HorizDistToRoadways".png>
-Package pdftex.def Info: ./figures/"HorizDistToRoadways".png  used on input lin
-e 103. on input line 103.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-103.
-<./figures/"VertDistToHydrology".png, id=15, 578.16pt x 432.1746pt>
-File: ./figures/"VertDistToHydrology".png Graphic file (type png)
-<use ./figures/"VertDistToHydrology".png>
-Package pdftex.def Info: ./figures/"VertDistToHydrology".png  used on input lin
-e 104. on input line 104.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-104.
-<./figures/"Slope".png, id=16, 578.16pt x 432.1746pt>
-File: ./figures/"Slope".png Graphic file (type png)
-<use ./figures/"Slope".png>
-Package pdftex.def Info: ./figures/"Slope".png  used on input line 105. on inpu
-t line 105.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-105.
-<./figures/"Wilderness1".png, id=17, 578.16pt x 432.1746pt>
-File: ./figures/"Wilderness1".png Graphic file (type png)
-<use ./figures/"Wilderness1".png>
-Package pdftex.def Info: ./figures/"Wilderness1".png  used on input line 109. o
-n input line 109.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-109.
-<./figures/"Wilderness2".png, id=18, 578.16pt x 432.1746pt>
-File: ./figures/"Wilderness2".png Graphic file (type png)
-<use ./figures/"Wilderness2".png>
-Package pdftex.def Info: ./figures/"Wilderness2".png  used on input line 110. o
-n input line 110.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-110.
-<./figures/"Wilderness3".png, id=19, 578.16pt x 432.1746pt>
-File: ./figures/"Wilderness3".png Graphic file (type png)
-<use ./figures/"Wilderness3".png>
-Package pdftex.def Info: ./figures/"Wilderness3".png  used on input line 111. o
-n input line 111.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-111.
-<./figures/"Wilderness4".png, id=20, 578.16pt x 432.1746pt>
-File: ./figures/"Wilderness4".png Graphic file (type png)
-<use ./figures/"Wilderness4".png>
-Package pdftex.def Info: ./figures/"Wilderness4".png  used on input line 112. o
-n input line 112.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-112.
-<./figures/"Cover_Type".png, id=21, 578.16pt x 432.1746pt>
-File: ./figures/"Cover_Type".png Graphic file (type png)
-<use ./figures/"Cover_Type".png>
-Package pdftex.def Info: ./figures/"Cover_Type".png  used on input line 113. on
- input line 113.
-Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
-113.
 
 ("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts
 \umsa.fd")
 ("C:\Users\William Hatcher\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts
 \umsb.fd")
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
 []|\T1/ptm/b/n/8 Binary
  []
 
 
-Overfull \hbox (2.83325pt too wide) in paragraph at lines 142--142
+Overfull \hbox (2.83325pt too wide) in paragraph at lines 111--111
 []|\T1/ptm/b/n/8 Numeric
  []
 
 
-Overfull \hbox (2.83325pt too wide) in paragraph at lines 142--142
+Overfull \hbox (2.83325pt too wide) in paragraph at lines 111--111
 []|\T1/ptm/b/n/8 Numeric
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []|\T1/ptm/b/n/8 Binary
  []
 
 
-Overfull \hbox (2.83325pt too wide) in paragraph at lines 169--169
+Overfull \hbox (2.83325pt too wide) in paragraph at lines 138--138
 []|\T1/ptm/b/n/8 Numeric
  []
 
 
-Overfull \hbox (2.83325pt too wide) in paragraph at lines 169--169
+Overfull \hbox (2.83325pt too wide) in paragraph at lines 138--138
 []|\T1/ptm/b/n/8 Numeric
  []
 
 
-Underfull \hbox (badness 5091) in paragraph at lines 197--197
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 144.
+
+<./figures/"Soil Type/2702".png, id=1, 578.16pt x 432.1746pt>
+File: ./figures/"Soil Type/2702".png Graphic file (type png)
+<use ./figures/"Soil Type/2702".png>
+Package pdftex.def Info: ./figures/"Soil Type/2702".png  used on input line 147
+. on input line 147.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+147.
+<./figures/"Soil Type/2703".png, id=3, 578.16pt x 432.1746pt>
+File: ./figures/"Soil Type/2703".png Graphic file (type png)
+<use ./figures/"Soil Type/2703".png>
+Package pdftex.def Info: ./figures/"Soil Type/2703".png  used on input line 148
+. on input line 148.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+148.
+<./figures/"Soil Type/2704".png, id=4, 578.16pt x 432.1746pt>
+File: ./figures/"Soil Type/2704".png Graphic file (type png)
+<use ./figures/"Soil Type/2704".png>
+Package pdftex.def Info: ./figures/"Soil Type/2704".png  used on input line 149
+. on input line 149.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+149.
+<./figures/"Soil Type/2705".png, id=5, 578.16pt x 432.1746pt>
+File: ./figures/"Soil Type/2705".png Graphic file (type png)
+<use ./figures/"Soil Type/2705".png>
+Package pdftex.def Info: ./figures/"Soil Type/2705".png  used on input line 150
+. on input line 150.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+150.
+<./figures/"Soil Type/2706".png, id=6, 578.16pt x 432.1746pt>
+File: ./figures/"Soil Type/2706".png Graphic file (type png)
+<use ./figures/"Soil Type/2706".png>
+Package pdftex.def Info: ./figures/"Soil Type/2706".png  used on input line 151
+. on input line 151.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+151.
+<./figures/"Aspect".png, id=7, 578.16pt x 432.1746pt>
+File: ./figures/"Aspect".png Graphic file (type png)
+<use ./figures/"Aspect".png>
+Package pdftex.def Info: ./figures/"Aspect".png  used on input line 155. on inp
+ut line 155.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+155.
+<./figures/"elevation".png, id=8, 578.16pt x 432.1746pt>
+File: ./figures/"elevation".png Graphic file (type png)
+<use ./figures/"elevation".png>
+Package pdftex.def Info: ./figures/"elevation".png  used on input line 156. on 
+input line 156.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+156.
+<./figures/"Hillshade9am".png, id=9, 578.16pt x 432.1746pt>
+File: ./figures/"Hillshade9am".png Graphic file (type png)
+<use ./figures/"Hillshade9am".png>
+Package pdftex.def Info: ./figures/"Hillshade9am".png  used on input line 157. 
+on input line 157.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+157.
+<./figures/"HillshadeNoon".png, id=10, 578.16pt x 432.1746pt>
+File: ./figures/"HillshadeNoon".png Graphic file (type png)
+<use ./figures/"HillshadeNoon".png>
+Package pdftex.def Info: ./figures/"HillshadeNoon".png  used on input line 158.
+ on input line 158.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+158.
+<./figures/"Hillshade3pm".png, id=11, 578.16pt x 432.1746pt>
+File: ./figures/"Hillshade3pm".png Graphic file (type png)
+<use ./figures/"Hillshade3pm".png>
+Package pdftex.def Info: ./figures/"Hillshade3pm".png  used on input line 159. 
+on input line 159.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+159.
+<./figures/"HorizDistToFirePoints".png, id=12, 578.16pt x 432.1746pt>
+File: ./figures/"HorizDistToFirePoints".png Graphic file (type png)
+<use ./figures/"HorizDistToFirePoints".png>
+Package pdftex.def Info: ./figures/"HorizDistToFirePoints".png  used on input l
+ine 163. on input line 163.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+163.
+<./figures/"HorizDistToHydrology".png, id=13, 578.16pt x 432.1746pt>
+File: ./figures/"HorizDistToHydrology".png Graphic file (type png)
+<use ./figures/"HorizDistToHydrology".png>
+Package pdftex.def Info: ./figures/"HorizDistToHydrology".png  used on input li
+ne 164. on input line 164.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+164.
+<./figures/"HorizDistToRoadways".png, id=14, 578.16pt x 432.1746pt>
+File: ./figures/"HorizDistToRoadways".png Graphic file (type png)
+<use ./figures/"HorizDistToRoadways".png>
+Package pdftex.def Info: ./figures/"HorizDistToRoadways".png  used on input lin
+e 165. on input line 165.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+165.
+<./figures/"VertDistToHydrology".png, id=15, 578.16pt x 432.1746pt>
+File: ./figures/"VertDistToHydrology".png Graphic file (type png)
+<use ./figures/"VertDistToHydrology".png>
+Package pdftex.def Info: ./figures/"VertDistToHydrology".png  used on input lin
+e 166. on input line 166.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+166.
+<./figures/"Slope".png, id=16, 578.16pt x 432.1746pt>
+File: ./figures/"Slope".png Graphic file (type png)
+<use ./figures/"Slope".png>
+Package pdftex.def Info: ./figures/"Slope".png  used on input line 167. on inpu
+t line 167.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+167.
+<./figures/"Wilderness1".png, id=17, 578.16pt x 432.1746pt>
+File: ./figures/"Wilderness1".png Graphic file (type png)
+<use ./figures/"Wilderness1".png>
+Package pdftex.def Info: ./figures/"Wilderness1".png  used on input line 171. o
+n input line 171.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+171.
+<./figures/"Wilderness2".png, id=18, 578.16pt x 432.1746pt>
+File: ./figures/"Wilderness2".png Graphic file (type png)
+<use ./figures/"Wilderness2".png>
+Package pdftex.def Info: ./figures/"Wilderness2".png  used on input line 172. o
+n input line 172.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+172.
+<./figures/"Wilderness3".png, id=19, 578.16pt x 432.1746pt>
+File: ./figures/"Wilderness3".png Graphic file (type png)
+<use ./figures/"Wilderness3".png>
+Package pdftex.def Info: ./figures/"Wilderness3".png  used on input line 173. o
+n input line 173.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+173.
+<./figures/"Wilderness4".png, id=20, 578.16pt x 432.1746pt>
+File: ./figures/"Wilderness4".png Graphic file (type png)
+<use ./figures/"Wilderness4".png>
+Package pdftex.def Info: ./figures/"Wilderness4".png  used on input line 174. o
+n input line 174.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+174.
+<./figures/"Cover_Type".png, id=21, 578.16pt x 432.1746pt>
+File: ./figures/"Cover_Type".png Graphic file (type png)
+<use ./figures/"Cover_Type".png>
+Package pdftex.def Info: ./figures/"Cover_Type".png  used on input line 175. on
+ input line 175.
+Package pdftex.def Info: Requested size: 98.04126pt x 73.28406pt on input line 
+175.
+
+Underfull \hbox (badness 5091) in paragraph at lines 205--205
 \T1/ptm/b/n/8 1 min-
  []
 
 
-Underfull \hbox (badness 5091) in paragraph at lines 197--197
+Underfull \hbox (badness 5091) in paragraph at lines 205--205
 \T1/ptm/b/n/8 2 min-
  []
 
 
-Underfull \hbox (badness 5091) in paragraph at lines 224--224
+Underfull \hbox (badness 5091) in paragraph at lines 232--232
 \T1/ptm/b/n/8 1 min-
  []
 
 
-Underfull \hbox (badness 5091) in paragraph at lines 224--224
+Underfull \hbox (badness 5091) in paragraph at lines 232--232
 \T1/ptm/b/n/8 2 min-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--253
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
 []|\T1/ptm/b/n/8 Binary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--253
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
 []|\T1/ptm/b/n/8 Numeric
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--253
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
 []|\T1/ptm/b/n/8 Numeric
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--253
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
 \T1/ptm/b/n/8 Only
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--281
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 []|\T1/ptm/b/n/8 Binary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--281
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 []|\T1/ptm/b/n/8 Numeric
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--281
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 []|\T1/ptm/b/n/8 Numeric
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--281
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 \T1/ptm/b/n/8 Only
  []
 
 
-Overfull \hbox (4.15764pt too wide) in paragraph at lines 308--308
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (4.15764pt too wide) in paragraph at lines 329--329
 []|\T1/ptm/b/n/8 Accuracy| 
  []
 
 
-Overfull \hbox (3.13351pt too wide) in paragraph at lines 308--308
+Overfull \hbox (3.13351pt too wide) in paragraph at lines 329--329
 []|\T1/ptm/b/n/8 Precision| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--308
+Underfull \hbox (badness 10000) in paragraph at lines 329--329
 []|\T1/ptm/b/n/8 F1-
  []
 
 
-Overfull \hbox (8.7617pt too wide) in paragraph at lines 335--335
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (8.7617pt too wide) in paragraph at lines 356--356
 []|\T1/ptm/b/n/8 Accuracy*| 
  []
 
 
-Overfull \hbox (3.73758pt too wide) in paragraph at lines 335--335
+Overfull \hbox (3.73758pt too wide) in paragraph at lines 356--356
 []|\T1/ptm/b/n/8 Precision| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--335
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
 []|\T1/ptm/b/n/8 F1-
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ** Conference Paper **
@@ -1332,7 +1348,7 @@ e/8r.enc}<C:/Users/William Hatcher/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/William Hatcher/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/William Hatcher/A
 ppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ClassificationComp.pdf (2 pages, 486105 bytes).
+Output written on ClassificationComp.pdf (2 pages, 486111 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

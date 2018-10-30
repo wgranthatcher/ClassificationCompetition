@@ -79,8 +79,70 @@ Finally, based on the results noted above, we determined the Random Forest algor
 
 On an additional note, we applied TensorFlow and Keras machine learning libraries, as denoted in Table~\ref{Table8} to train dense neural networks of shapes 250-100-10-7 and 500-250-10-7. These were trained on a variety of epochs and batch sizes, reported as "\_epochs\_batch" in the table. Again, we trained the models on only binary data and only multivariate data ("-bin" and -"multi") to determine the performance of data subsets. These again performed worse. It is also notable that the final accuracies calculated, denote by Accuracy*, we not the same as the training accuracy reported by the TensorFlow API, and it is not clear what the difference is. For this reason, this method was not ultimately used.
  
-\begin{figure*}[ht]
-	\vspace{-2mm}
+% \begin{figure}[ht]
+% 	\vspace{-3mm}
+% 	\centering
+% 	\includegraphics[width=0.3\textwidth]{./figures/"Elevation Density by Cover Type".png}\\
+% 	\caption{EDIT: Bar charts, histograms, and KDE plots of some.}
+% 	\label{fig1}
+% \end{figure}
+ 
+\begin{center}
+	\begin{table}[ht]
+		\centering \footnotesize
+		\vspace{-2mm}
+		\caption{Basic Learning - Accuracy}
+		\hspace{1cm}
+		\begin{tabularx}{\linewidth}{ l  X  X  X  X  X }
+			\hline
+			\textbf{ACCURACY} &	\textbf{Full Set 1}&	\textbf{Full Set 2}&	\textbf{Binary Only 1}&	\textbf{Numeric Only 1}&	\textbf{Numeric Only 2} \\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			\textbf{KNN-3}&	0.596&	0.596&	0.415&	0.596&	0.596\\ \hline
+			\textbf{DT-gini}&	0.927&	0.927&	0.540&	0.897&	0.897\\ \hline
+			\textbf{DT-entropy}&	\textbf{0.930}&	\textbf{0.930}&	0.540&	0.910&	0.909\\ \hline
+			\textbf{RF-10}&	0.925&	0.927&	\textbf{0.546}&	\textbf{0.918}&	\textbf{0.917}\\ \hline
+			\textbf{NB-gaussian}&	0.634&	0.634&	0.488&	0.634&	0.634\\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			%\cellcolor{lightgray} & \cellcolor{lightgray} \\ \hline
+		\end{tabularx}\newline
+		\vspace{-2mm}
+		\label{Table1}
+	\end{table} \hfil
+\end{center}
+
+\begin{center}
+	\begin{table}[ht]
+		\centering \footnotesize
+		\vspace{-2mm}
+		\caption{Basic Learning - F1-Score}
+		\hspace{1cm}
+		\begin{tabularx}{\linewidth}{ l  X  X  X  X  X }
+			\hline
+			\textbf{ACCURACY} &	\textbf{Full Set 1}&	\textbf{Full Set 2}&	\textbf{Binary Only 1}&	\textbf{Numeric Only 1}&	\textbf{Numeric Only 2} \\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			\textbf{KNN-3}&	0.590&	0.590&	0.400&	0.590&	0.590\\ \hline
+			\textbf{DT-gini}&	\textbf{0.930}&	\textbf{0.930}&	0.540&	0.900&	0.900\\ \hline
+			\textbf{DT-entropy}&	\textbf{0.930}&	\textbf{0.930}&	0.540&	0.910&	0.910\\ \hline
+			\textbf{RF-10}&	0.920&	\textbf{0.930}&	\textbf{0.550}&	\textbf{0.920}&	\textbf{0.920}\\ \hline
+			\textbf{NB-gaussian}&	0.640&	0.640&	0.320&	0.640&	0.640\\ \hline
+			
+			%&&&&&&&&&&&&\\[-2ex] \hline
+			
+			%\cellcolor{lightgray} & \cellcolor{lightgray} \\ \hline
+		\end{tabularx}\newline
+		\vspace{-2mm}
+		\label{Table2}
+	\end{table} \hfil
+\end{center}
+
+\begin{figure*}[!]
+	\vspace{-4mm}
 	\centering
 	\includegraphics[width=0.19\textwidth]{./figures/"Soil Type/2702".png}
 	\includegraphics[width=0.19\textwidth]{./figures/"Soil Type/2703".png}
@@ -105,7 +167,7 @@ On an additional note, we applied TensorFlow and Keras machine learning librarie
 	\includegraphics[width=0.19\textwidth]{./figures/"Slope".png}\\
 	%	\caption{Basic Block Example}
 	
-		\centering
+	\centering
 	\includegraphics[width=0.19\textwidth]{./figures/"Wilderness1".png}
 	\includegraphics[width=0.19\textwidth]{./figures/"Wilderness2".png}
 	\includegraphics[width=0.19\textwidth]{./figures/"Wilderness3".png}
@@ -115,66 +177,12 @@ On an additional note, we applied TensorFlow and Keras machine learning librarie
 	
 	%\captionsetup{justification=centering, width=0.9\textwidth}
 	\caption{Bar charts, histograms, and KDE plots of some of the dataset attributes.}
-	\label{fig1}
+	\label{fig2}
+	\vspace{-4mm}
 \end{figure*}
 
 \begin{center}
-	\begin{table}[t]
-		\centering \footnotesize
-		\vspace{0.01cm}
-		\caption{Basic Learning - Accuracy}
-		\hspace{1cm}
-		\begin{tabularx}{\linewidth}{ l  X  X  X  X  X }
-			\hline
-			\textbf{ACCURACY} &	\textbf{Full Set 1}&	\textbf{Full Set 2}&	\textbf{Binary Only 1}&	\textbf{Numeric Only 1}&	\textbf{Numeric Only 2} \\ \hline
-			
-			%&&&&&&&&&&&&\\[-2ex] \hline
-			
-			\textbf{KNN-3}&	0.596&	0.596&	0.415&	0.596&	0.596\\ \hline
-			\textbf{DT-gini}&	0.927&	0.927&	0.540&	0.897&	0.897\\ \hline
-			\textbf{DT-entropy}&	\textbf{0.930}&	\textbf{0.930}&	0.540&	0.910&	0.909\\ \hline
-			\textbf{RF-10}&	0.925&	0.927&	\textbf{0.546}&	\textbf{0.918}&	\textbf{0.917}\\ \hline
-			\textbf{NB-gaussian}&	0.634&	0.634&	0.488&	0.634&	0.634\\ \hline
-			
-			%&&&&&&&&&&&&\\[-2ex] \hline
-					
-			%\cellcolor{lightgray} & \cellcolor{lightgray} \\ \hline
-		\end{tabularx}\newline
-		\vspace{-0.05cm}
-		\label{Table1}
-	\end{table} \hfil
-\end{center}
-
-\begin{center}
-	\begin{table}[t]
-		\centering \footnotesize
-		\vspace{0.01cm}
-		\caption{Basic Learning - F1-Score}
-		\hspace{1cm}
-		\begin{tabularx}{\linewidth}{ l  X  X  X  X  X }
-			\hline
-			\textbf{ACCURACY} &	\textbf{Full Set 1}&	\textbf{Full Set 2}&	\textbf{Binary Only 1}&	\textbf{Numeric Only 1}&	\textbf{Numeric Only 2} \\ \hline
-			
-			%&&&&&&&&&&&&\\[-2ex] \hline
-			
-			\textbf{KNN-3}&	0.590&	0.590&	0.400&	0.590&	0.590\\ \hline
-			\textbf{DT-gini}&	\textbf{0.930}&	\textbf{0.930}&	0.540&	0.900&	0.900\\ \hline
-			\textbf{DT-entropy}&	\textbf{0.930}&	\textbf{0.930}&	0.540&	0.910&	0.910\\ \hline
-			\textbf{RF-10}&	0.920&	\textbf{0.930}&	\textbf{0.550}&	\textbf{0.920}&	\textbf{0.920}\\ \hline
-			\textbf{NB-gaussian}&	0.640&	0.640&	0.320&	0.640&	0.640\\ \hline
-			
-			%&&&&&&&&&&&&\\[-2ex] \hline
-			
-			%\cellcolor{lightgray} & \cellcolor{lightgray} \\ \hline
-		\end{tabularx}\newline
-		\vspace{-0.05cm}
-		\label{Table2}
-	\end{table} \hfil
-\end{center}
-
-
-\begin{center}
-	\begin{table}[t]
+	\begin{table}[b]
 		\centering \footnotesize
 		\vspace{0.01cm}
 		\caption{Improved Basic Learning - Accuracy}
@@ -201,7 +209,7 @@ On an additional note, we applied TensorFlow and Keras machine learning librarie
 \end{center}
 
 \begin{center}
-	\begin{table}[t]
+	\begin{table}[b]
 		\centering \footnotesize
 		\vspace{0.01cm}
 		\caption{Improved Basic Learning - F1-Score}
@@ -228,8 +236,21 @@ On an additional note, we applied TensorFlow and Keras machine learning librarie
 \end{center}
 
 
+%\begin{figure*}[ht]
+%	\vspace{-2mm}
+%	\centering
+%	\includegraphics[width=0.4\textwidth]{./figures/"Desc and Med Elevation".png}
+%	\includegraphics[width=0.4\textwidth]{./figures/"Percentage of Tree Cover Types".png}\\
+%	%	\caption{Basic Block Example}
+%	
+%	%\captionsetup{justification=centering, width=0.9\textwidth}
+%	\caption{EDIT: Bar charts, histograms, and KDE plots of some of the dataset attributes.}
+%	\label{fig3}
+%\end{figure*}
+
+
 \begin{center}
-	\begin{table}[t]
+	\begin{table}[h]
 		\centering \footnotesize
 		\vspace{0.01cm}
 		\caption{Advanced Learning - Accuracy}
@@ -257,7 +278,7 @@ On an additional note, we applied TensorFlow and Keras machine learning librarie
 \end{center}
 
 \begin{center}
-	\begin{table}[t]
+	\begin{table}[h]
 		\centering \footnotesize
 		\vspace{0.01cm}
 		\caption{Advanced Learning - F1-Score}
@@ -285,7 +306,7 @@ On an additional note, we applied TensorFlow and Keras machine learning librarie
 \end{center}
 
 \begin{center}
-	\begin{table}[t]
+	\begin{table}[h]
 		\centering \footnotesize
 		\vspace{0.01cm}
 		\caption{Top Basic Learning - Random Forests}
@@ -312,7 +333,7 @@ On an additional note, we applied TensorFlow and Keras machine learning librarie
 \end{center}
 
 \begin{center}
-	\begin{table}[t]
+	\begin{table}[h]
 		\centering \footnotesize
 		\vspace{0.01cm}
 		\caption{Top Advanced Learning - Dense Neural Networks with TensorFlow}
